@@ -1,9 +1,8 @@
 >>> serine="TCA"
->>> print(serine, "codes for serine")
-TCA codes for serine
->>> serine="TCG"
->>> print("as does", serine)
-as does TCG
+>>>print(serine, "codes for serine")
+>>>serine="TCG"
+>>>print("as does", serine)
+
 
 # Calculate the GC content of a DNA sequence
 bases = 'ATTCGGTCATGCTAA'
