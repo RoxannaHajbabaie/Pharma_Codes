@@ -1,6 +1,38 @@
-serine="TCA"
->>>print(serine, "codes for serine")
+>>> serine="TCA"
+>>> print(serine, "codes for serine")
 TCA codes for serine
 >>> serine="TCG"
 >>> print("as does", serine)
 as does TCG
+
+# Calculate the GC content of a DNA sequence
+bases = 'ATTCGGTCATGCTAA'
+>>> print("bases")
+
+serine="TCA"
+>>>print(serine, "codes for serine")
+
+#Create a variable, gc, which will be used to count the number of Gs or Cs
+>>>gc = 0
+
+# Calculate GC content of a DNA sequence
+bases = 'ATTCGGTCATGCTAA'
+
+# Create a variable, gc, which will be used to count the number of Gs or Cs
+gc = 0
+
+# Output every base of the sequence alongside its index on a new line.
+for i, base in enumerate(bases):
+    print(i, base)
+
+# Loop over the bases in your sequence.
+# If the base is a G or a C, add one to your gc variable.
+for base in bases:
+    if (base == 'G') or (base == 'C'):
+        gc += 1
+print("Frequency of GC:", gc)
+
+# Calculate the GC percentage and print it
+gc_percent = (gc / len(bases)) * 100
+print("%GC: {:.2f}%".format(gc_percent))
+
