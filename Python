@@ -1,0 +1,6 @@
+serine="TCA"
+>>>print(serine, "codes for serine")
+TCA codes for serine
+>>> serine="TCG"
+>>> print("as does", serine)
+as does TCG
